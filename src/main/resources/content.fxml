@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onKeyPressed="#reloadButton" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ContentController">
+   <children>
+      <VBox fx:id="contentVBox" prefHeight="400.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <ImageView fx:id="personPhoto" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <VBox AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <Text fx:id="personName" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Hyperlink fx:id="personBio">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="-1.0" top="-5.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="searchField" onKeyPressed="#searchEnterButton" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="22.0" />
+                  <Button mnemonicParsing="false" onAction="#searchButton" text="Search" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="22.0" />
+                  <Button mnemonicParsing="false" onAction="#exitButton" text="Exit" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="personRepositories" onMouseClicked="#copyButton" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="idColumn" minWidth="60.0" prefWidth="60.0" text="#" />
+                        <TableColumn fx:id="nameColumn" minWidth="145.0" prefWidth="145.0" text="Name" />
+                        <TableColumn fx:id="descriptionColumn" minWidth="300.0" prefWidth="69.0" text="Brief description" />
+                        <TableColumn fx:id="watchedColumn" minWidth="70.0" prefWidth="70.0" text="Watched" />
+                        <TableColumn fx:id="starsColumn" minWidth="60.0" prefWidth="60.0" text="Stars" />
+                        <TableColumn fx:id="forksColumn" minWidth="60.0" prefWidth="60.0" text="Forks" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

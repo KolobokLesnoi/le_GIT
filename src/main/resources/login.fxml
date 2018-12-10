@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onKeyPressed="#enterButton" prefHeight="450" prefWidth="300" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your GitGub Login" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="loginField" layoutX="28.0" layoutY="226.0" prefHeight="30.0" prefWidth="247.0" promptText="Hint text" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text layoutX="29.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your password" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordField" layoutX="29.0" layoutY="296.0" prefHeight="30.0" prefWidth="247.0" promptText="Hint text" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="28.0" layoutY="360.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="30.0" prefWidth="247.0" text="Login" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <BorderPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <bottom>
+            <Text fx:id="textErrorLogin" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="wrong login or password" textAlignment="CENTER" visible="false" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

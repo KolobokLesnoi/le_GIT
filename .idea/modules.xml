@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../Projects/le_GIT/.idea/modules/le_GIT.iml" filepath="$PROJECT_DIR$/../../Projects/le_GIT/.idea/modules/le_GIT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Projects/le_GIT/.idea/modules/le_GIT_main.iml" filepath="$PROJECT_DIR$/../../Projects/le_GIT/.idea/modules/le_GIT_main.iml" group="le_GIT" />
+      <module fileurl="file://$PROJECT_DIR$/../../Projects/le_GIT/.idea/modules/le_GIT_test.iml" filepath="$PROJECT_DIR$/../../Projects/le_GIT/.idea/modules/le_GIT_test.iml" group="le_GIT" />
+    </modules>
+  </component>
+</project>
